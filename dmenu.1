@@ -3,7 +3,9 @@
 dmenu \- dynamic menu
 .SH SYNOPSIS
 .B dmenu
-.RB [ \-bfirvP ]
+.RB [ \-bfirvPx ]
+.RB [ \-g
+.IR columns ]
 .RB [ \-l
 .IR lines ]
 .RB [ \-m
@@ -53,8 +55,11 @@ dmenu will not directly display the keyboard input, but instead replace it with 
 .B \-r
 dmenu will reject any input which would result in no matching option left.
 .TP
+.BI \-g " columns"
+dmenu lists items in a grid with the given number of columns.
+.TP
 .BI \-l " lines"
-dmenu lists items vertically, with the given number of lines.
+dmenu lists items in a grid with the given number of lines.
 .TP
 .BI \-m " monitor"
 dmenu is displayed on the monitor number supplied. Monitor numbers are starting
@@ -83,6 +88,9 @@ defines the selected foreground color.
 .TP
 .B \-v
 prints version information to stdout, then exits.
+.TP
+.B \-x
+Invert prefix matching setting.
 .TP
 .BI \-w " windowid"
 embed into windowid.
