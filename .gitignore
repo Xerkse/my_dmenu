@@ -31,5 +31,4 @@
 *.orig
 
 # use config.def.h
-config.h
 dmenu
